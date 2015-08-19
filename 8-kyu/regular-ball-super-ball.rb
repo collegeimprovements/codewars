@@ -11,14 +11,20 @@
 # ball1.ball_type  #=> "regular"
 # ball2.ball_type  #=> "super"
 
-class Ball 
-	attr_accessor :ball_type
+#mine
+class Ball
+  attr_accessor :ball_type
 
-	def self.ball_type type="regular"
-		@ball_type = type
-	end
+  def initialize(name="regular")
+    @ball_type=name
+  end
+
 end
 
-b = Ball.new "super"
-b.ball_type
-
+#another solution	
+class Ball
+  attr_reader :ball_type
+  def initialize(ball_type="regular")
+    @ball_type = ball_type
+  end
+end
