@@ -104,8 +104,8 @@ end
 #9
 class Ghost
   def color 
-  x = ["white", "yellow", "purple", "red"]
-  x[rand(x.length)]
+    x = ["white", "yellow", "purple", "red"]
+    x[rand(x.length)]
   end
 end
 
